@@ -64,3 +64,15 @@ export interface JwtPayload {
   iat?: number | undefined;
   jti?: string | undefined;
 }
+
+import { VC_NAME, VC_ID } from '../.env';
+
+const sendPayment = () => {
+  const payeeInstitution = document.getElementById('payeeInstitution').value;
+  const amount = document.getElementById('amount').value;
+  
+  createVP(VC_NAME, VC_ID, {
+    payeeInstitution, 
+    amount 
+  });
+}
