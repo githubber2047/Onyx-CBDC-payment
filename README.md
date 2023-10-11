@@ -1,2 +1,6 @@
 # Onyx-CBDC-payment
-Create a digital identity-based solution that solves common pain points in B2B payments use cases for VISA
+The objective is to create a digital identity-based solution that solves common pain points in B2B payments use cases for VISA.  
+
+We shall use a Web3 identifier such as Ethereum Naming Service (ENS) so that users can send cross border payment to other users who have a human-readable name to their public addresses.  So for example, to make a payment from, let's say the Hong Kong office of JpMorgan to the London office of JpMorgan, we could send payment to jpmorganlondon.eth, the ENS identity of the JPMorgan London office.  
+
+The entities that use this OnyxPay system can also have an alphanumeric identifier, ie the Decentralized identifier (DIDs), the recognized standard within the World Wide Web Consortium(W3C) to ensure we are sending payment to the correct entity.  We can also use Verifiable credentials (VCs) issued by the JPMorgan Headquarters (the issuer) to ascertain identity credentials of the various branches of JPMorgan, to ensure payment is made to the correct entity.  It ensures privacy in that only JPMorgan entities will be able to view the details of the credentials, where claims are stored off-chain, keeping personal data private, where VC holders can choose the claim (or part of a claim) they wish to present to another entity.    
